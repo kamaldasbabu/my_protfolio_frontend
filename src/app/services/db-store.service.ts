@@ -7,8 +7,6 @@ import { Subject } from 'rxjs';
 export class DbStoreService {
   constructor() {}
 
-
-
   private scrollSubject = new Subject<string>();
   public scrollObservable$ = this.scrollSubject.asObservable();
 
@@ -16,17 +14,16 @@ export class DbStoreService {
     this.scrollSubject.next(section);
   }
 
-
   public user: { [key: string]: any } = {
     firstName: 'Kamal',
     lastName: 'Ruidas',
     fullName: 'Kamal Ruidas',
     age: 29,
     role: 'Software Developer',
-    position: "Level II",
+    position: 'Level II',
     avtarPath: '',
-    linkedinUrl: "https://www.linkedin.com/in/imkamalbabu/",
-    githubUrl: "https://github.com/kamaldasbabu/"
+    linkedinUrl: 'https://www.linkedin.com/in/imkamalbabu/',
+    githubUrl: 'https://github.com/kamaldasbabu/',
   };
 
   public experience: { [key: string]: string | number | boolean }[] = [
@@ -86,15 +83,36 @@ export class DbStoreService {
 
   public about = {
     msg: "I'm a full stack developer, Having about to 3 years of experience ",
-    totalExpeience: "2 Years 11 Months",
-    highestQulifications: "B Tech in Computer Science and Engineering"
+    totalExpeience: '2 Years 11 Months',
+    highestQulifications: 'B Tech in Computer Science and Engineering',
   };
-  public contact: { [key: string]: string | number | boolean } = {
-    phoneNumber: '9002888618',
-    emailId: 'mailto:kamaldasbabu@gmail.com',
-    linkedinUrl: "https://www.linkedin.com/in/imkamalbabu/",
-    githubUrl: "https://github.com/kamaldasbabu/"
-  };
+  public contact: { [key: string]: string | number | boolean }[] = [
+    {
+      imageSrc: '../../../assets/images/email.png',
+      info: '+91 9002888618',
+      message: 'Phone Number',
+    },
+    {
+      imageSrc: '../../../assets/images/email.png',
+      info: 'kamaldasbabu@gmail.com',
+      message: 'Email Id',
+    },
+    {
+      imageSrc: '../../../assets/images/email.png',
+      info: 'kamaldasbabu@gmail.com',
+      message: 'Email Id',
+    },
+    {
+      imageSrc: '../../../assets/images/linkedin.png',
+      info: 'https://www.linkedin.com/in/imkamalbabu/',
+      message: 'LinkedIn',
+    },
+    {
+      imageSrc: 'github',
+      info: 'https://github.com/kamaldasbabu/',
+      message: 'GitHub',
+    },
+  ];
 
   public projects: { [key: string]: string | number | boolean | {} }[] = [
     {
@@ -105,8 +123,8 @@ export class DbStoreService {
         2: 'Node JS',
         3: 'MongoDB',
       },
-      staringDate: "",
-      endingDate: "",
+      staringDate: '',
+      endingDate: '',
       status: 'Completed',
       isActive: true,
     },
@@ -119,8 +137,8 @@ export class DbStoreService {
         3: 'MongoDB',
       },
       status: 'Completed',
-      staringDate: "",
-      endingDate: "",
+      staringDate: '',
+      endingDate: '',
       isActive: true,
     },
   ];
