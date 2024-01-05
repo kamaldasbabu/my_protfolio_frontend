@@ -1,0 +1,16 @@
+.profile-component {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.w-30 {
+    width: 30%;
+}
+.w-50 {
+    width: 50%;
+}
+.ml-1 {
+    margin-left: 1rem;
+}
