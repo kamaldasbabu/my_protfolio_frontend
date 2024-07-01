@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<section class="min-h-screen font" style="
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+">
+  <app-header></app-header>
+  <div class="content-with-topbar">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer class="sticky top-[100vh]"></app-footer>
+</section>

@@ -33,7 +33,15 @@ export class HeaderComponent implements OnInit {
   scrollTo(section: string): void {
     console.log('section', section);
 
-    this.homeComponent.scrollTo(section);
+    // this.homeComponent.scrollTo(section);
+
+    const sectionElement = document.getElementById(section);
+    // alert("peyechi "+sectionId + "--> "+ JSON.stringify(sectionElement))
+    console.log("Peyechi ", section, sectionElement);
+    if (sectionElement) {
+      this.renderer.setProperty(sectionElement, 'scrollTop', 0); // Ensure scrolling to the top of the section
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
 
     // const element = this.el.nativeElement.querySelector(`#${section}`);
 
