@@ -4,5 +4,5 @@
   flex-wrap: wrap;
   flex-direction: column;
   padding: 0 2rem 0 2rem;
-  max-width: 80vh;
+  /* max-width: 80vh; */
 }

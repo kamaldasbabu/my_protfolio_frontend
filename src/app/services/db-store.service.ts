@@ -108,7 +108,7 @@ export class DbStoreService {
       message: 'LinkedIn',
     },
     {
-      imageSrc: 'github',
+      imageSrc: '../../../assets/images/linkedin.png',
       info: 'https://github.com/kamaldasbabu/',
       message: 'GitHub',
     },
