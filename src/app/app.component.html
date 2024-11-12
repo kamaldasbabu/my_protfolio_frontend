@@ -1,11 +1,14 @@
-<section class="min-h-screen font" style="
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-">
-  <app-header></app-header>
-  <div class="content-with-topbar">
+<div  style="display: flex; flex-direction: column;">
+  <!-- class="min-h-screen font" -->
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <!-- <div class="content-with-topbar"> -->
+  <div class="route-conaier">
     <router-outlet></router-outlet>
   </div>
-  <app-footer class="sticky top-[100vh]"></app-footer>
-</section>
+  <!-- </div> -->
+  <div class="footer-container sticky top-[100vh]">
+    <app-footer></app-footer>
+  </div>
+</div>

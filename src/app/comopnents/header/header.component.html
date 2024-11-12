@@ -3,7 +3,7 @@
     <div class="logo">{{ name }}</div>
     <div>
       <ul class="nav-links">
-        <li><span class="pointer" (click)="scrollTo('home')">About</span></li>
+        <li><span class="pointer" (click)="scrollTo('about')">About</span></li>
         <li><span class="pointer" (click)="scrollTo('experience')">Experience</span></li>
         <li><span class="pointer" (click)="scrollTo('projects')">Projects</span></li>
         <li><span class="pointer" (click)="scrollTo('contact')">Contact</span></li>
@@ -19,10 +19,18 @@
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#about" (click)="toggleMenu()">About</a></li>
+        <!-- <li><a href="#about" (click)="toggleMenu()">About</a></li>
         <li><a href="#experience" (click)="toggleMenu()">Experience</a></li>
         <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li> -->
+        <div>
+          <ul class="nav-links">
+            <li><span class="pointer" (click)="scrollTo('about')">About</span></li>
+            <li><span class="pointer" (click)="scrollTo('experience')">Experience</span></li>
+            <li><span class="pointer" (click)="scrollTo('projects')">Projects</span></li>
+            <li><span class="pointer" (click)="scrollTo('contact')">Contact</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
